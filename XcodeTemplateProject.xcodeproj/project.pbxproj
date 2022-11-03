@@ -20,6 +20,7 @@
 		4BBE9069291293E8008F734D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4BBE9068291293E7008F734D /* .gitignore */; };
 		4BBE906B291293F0008F734D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4BBE906A291293F0008F734D /* LICENSE */; };
 		4BBE906D291293F6008F734D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4BBE906C291293F6008F734D /* README.md */; };
+		4BBE907129137B5E008F734D /* main.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4BBE907029137B5D008F734D /* main.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		4BBE9068291293E7008F734D /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		4BBE906A291293F0008F734D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		4BBE906C291293F6008F734D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4BBE907029137B5D008F734D /* main.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main.yml; path = .github/workflows/main.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		4B1483D82912892C0013B76E = {
 			isa = PBXGroup;
 			children = (
+				4BBE907029137B5D008F734D /* main.yml */,
 				4BBE9068291293E7008F734D /* .gitignore */,
 				4BBE906A291293F0008F734D /* LICENSE */,
 				4BBE906C291293F6008F734D /* README.md */,
@@ -238,6 +241,7 @@
 				4B1483EC2912892F0013B76E /* MainWindowController.storyboard in Resources */,
 				4BBE9062291290BD008F734D /* MainMenu.xib in Resources */,
 				4BBE906B291293F0008F734D /* LICENSE in Resources */,
+				4BBE907129137B5E008F734D /* main.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
