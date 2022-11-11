@@ -20,6 +20,10 @@
 		4B5A9BC62915193C002062AC /* main.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4B5A9BC52915193C002062AC /* main.yml */; };
 		4B5A9BC8291525D6002062AC /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A9BC7291525D6002062AC /* TestingAppDelegate.swift */; };
 		4B5A9BCA29156EC2002062AC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A9BC929156EC2002062AC /* main.swift */; };
+		4BA0C755291E3B5F0011D359 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0C754291E3B5F0011D359 /* UserPreferences.swift */; };
+		4BA0C758291E4B8C0011D359 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4BA0C757291E4B8C0011D359 /* Settings.bundle */; };
+		4BA0C75A291EAA0C0011D359 /* SettingsBundleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0C759291EAA0C0011D359 /* SettingsBundleTests.swift */; };
+		4BA0C75D291EAE830011D359 /* SettingsBundleTestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0C75C291EAE830011D359 /* SettingsBundleTestHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 		4B5A9BC52915193C002062AC /* main.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main.yml; path = .github/workflows/main.yml; sourceTree = "<group>"; };
 		4B5A9BC7291525D6002062AC /* TestingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
 		4B5A9BC929156EC2002062AC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4BA0C754291E3B5F0011D359 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserPreferences.swift; path = XcodeTemplateProject/Configuration/FirstPartyCode/UserPreferences.swift; sourceTree = SOURCE_ROOT; };
+		4BA0C757291E4B8C0011D359 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		4BA0C759291EAA0C0011D359 /* SettingsBundleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBundleTests.swift; sourceTree = "<group>"; };
+		4BA0C75C291EAE830011D359 /* SettingsBundleTestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBundleTestHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +116,7 @@
 			children = (
 				4B5A9BB829150609002062AC /* Configuration */,
 				4B5A9BA9291393CE002062AC /* XcodeTemplateProjectTests.swift */,
+				4BA0C759291EAA0C0011D359 /* SettingsBundleTests.swift */,
 			);
 			path = XcodeTemplateProjectTests;
 			sourceTree = "<group>";
@@ -115,6 +124,8 @@
 		4B5A9BB4291505BD002062AC /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				4BA0C757291E4B8C0011D359 /* Settings.bundle */,
+				4BA0C756291E3C250011D359 /* FirstPartyCode */,
 				4B5A9B9D291393CE002062AC /* LaunchScreen.storyboard */,
 				4B5A9B94291393CD002062AC /* AppDelegate.swift */,
 				4B5A9BA0291393CE002062AC /* Info.plist */,
@@ -143,10 +154,27 @@
 		4B5A9BB829150609002062AC /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				4BA0C75B291EAB900011D359 /* Helpers */,
 				4B5A9BAB291393CE002062AC /* Info.plist */,
 				4B5A9BC7291525D6002062AC /* TestingAppDelegate.swift */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		4BA0C756291E3C250011D359 /* FirstPartyCode */ = {
+			isa = PBXGroup;
+			children = (
+				4BA0C754291E3B5F0011D359 /* UserPreferences.swift */,
+			);
+			path = FirstPartyCode;
+			sourceTree = "<group>";
+		};
+		4BA0C75B291EAB900011D359 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4BA0C75C291EAE830011D359 /* SettingsBundleTestHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +265,7 @@
 				4B5A9BBA291507E1002062AC /* Requirements.txt in Resources */,
 				4B5A9BC429151932002062AC /* README.md in Resources */,
 				4B5A9B9A291393CD002062AC /* MainViewController.storyboard in Resources */,
+				4BA0C758291E4B8C0011D359 /* Settings.bundle in Resources */,
 				4B5A9BC62915193C002062AC /* main.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B5A9B97291393CD002062AC /* MainViewController.swift in Sources */,
+				4BA0C755291E3B5F0011D359 /* UserPreferences.swift in Sources */,
 				4B5A9B95291393CD002062AC /* AppDelegate.swift in Sources */,
 				4B5A9BCA29156EC2002062AC /* main.swift in Sources */,
 			);
@@ -267,6 +297,8 @@
 			files = (
 				4B5A9BAA291393CE002062AC /* XcodeTemplateProjectTests.swift in Sources */,
 				4B5A9BC8291525D6002062AC /* TestingAppDelegate.swift in Sources */,
+				4BA0C75D291EAE830011D359 /* SettingsBundleTestHelper.swift in Sources */,
+				4BA0C75A291EAA0C0011D359 /* SettingsBundleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,6 +19,7 @@ extension AppDelegate: UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions
         launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
         #if DEBUG
         print(">> Launching with business matter purpose")
         print(">> [\(type(of: self))]." + #function)
@@ -35,5 +36,41 @@ extension AppDelegate: UIApplicationDelegate {
         window!.makeKeyAndVisible()
 
         return true
+    }
+
+    func applicationDidBecomeActive(_ application: UIApplication) {
+
+        #if DEBUG
+        print(">> [\(type(of: self))]." + #function)
+        #endif
+
+        UserPreferences.setBuildNumber()
+        UserPreferences.setVersionNumber()
+
+        UserPreferences.registerSettingsBundle(with: Settings.bundleParams)
+    }
+
+    func applicationWillResignActive(_ application: UIApplication) {
+        #if DEBUG
+        print(">> [\(type(of: self))]." + #function)
+        #endif
+    }
+
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        #if DEBUG
+        print(">> [\(type(of: self))]." + #function)
+        #endif
+    }
+
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        #if DEBUG
+        print(">> [\(type(of: self))]." + #function)
+        #endif
+    }
+
+    func applicationWillTerminate(_ application: UIApplication) {
+        #if DEBUG
+        print(">> [\(type(of: self))]." + #function)
+        #endif
     }
 }
