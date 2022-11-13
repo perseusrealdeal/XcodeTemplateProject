@@ -24,6 +24,13 @@
 		4BA0C758291E4B8C0011D359 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4BA0C757291E4B8C0011D359 /* Settings.bundle */; };
 		4BA0C75A291EAA0C0011D359 /* SettingsBundleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0C759291EAA0C0011D359 /* SettingsBundleTests.swift */; };
 		4BA0C75D291EAE830011D359 /* SettingsBundleTestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0C75C291EAE830011D359 /* SettingsBundleTestHelper.swift */; };
+		4BA0C75F291F5BE30011D359 /* LocalizationTestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0C75E291F5BE30011D359 /* LocalizationTestHelper.swift */; };
+		4BA0C761291F5FEB0011D359 /* Localization_en.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BA0C760291F5FEB0011D359 /* Localization_en.plist */; };
+		4BA0C763291F60020011D359 /* Localization_ru.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BA0C762291F60020011D359 /* Localization_ru.plist */; };
+		4BA0C76C291F7F5D0011D359 /* LocalizationExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0C76B291F7F5D0011D359 /* LocalizationExtentions.swift */; };
+		4BA0C76D291FC43D0011D359 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BA0C76F291FC43D0011D359 /* Localizable.strings */; };
+		4BA0C777291FC5340011D359 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BA0C775291FC5340011D359 /* InfoPlist.strings */; };
+		4BA0C77A29201E620011D359 /* LocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0C77929201E620011D359 /* LocalizationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +65,15 @@
 		4BA0C757291E4B8C0011D359 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		4BA0C759291EAA0C0011D359 /* SettingsBundleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBundleTests.swift; sourceTree = "<group>"; };
 		4BA0C75C291EAE830011D359 /* SettingsBundleTestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBundleTestHelper.swift; sourceTree = "<group>"; };
+		4BA0C75E291F5BE30011D359 /* LocalizationTestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationTestHelper.swift; sourceTree = "<group>"; };
+		4BA0C760291F5FEB0011D359 /* Localization_en.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Localization_en.plist; sourceTree = "<group>"; };
+		4BA0C762291F60020011D359 /* Localization_ru.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Localization_ru.plist; sourceTree = "<group>"; };
+		4BA0C76B291F7F5D0011D359 /* LocalizationExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationExtentions.swift; sourceTree = "<group>"; };
+		4BA0C76E291FC43D0011D359 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4BA0C770291FC46C0011D359 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4BA0C776291FC5340011D359 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4BA0C778291FC53A0011D359 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4BA0C77929201E620011D359 /* LocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +133,7 @@
 				4B5A9BB829150609002062AC /* Configuration */,
 				4B5A9BA9291393CE002062AC /* XcodeTemplateProjectTests.swift */,
 				4BA0C759291EAA0C0011D359 /* SettingsBundleTests.swift */,
+				4BA0C77929201E620011D359 /* LocalizationTests.swift */,
 			);
 			path = XcodeTemplateProjectTests;
 			sourceTree = "<group>";
@@ -125,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				4BA0C757291E4B8C0011D359 /* Settings.bundle */,
+				4BA0C764291F60A60011D359 /* Localization */,
 				4BA0C756291E3C250011D359 /* FirstPartyCode */,
 				4B5A9B9D291393CE002062AC /* LaunchScreen.storyboard */,
 				4B5A9B94291393CD002062AC /* AppDelegate.swift */,
@@ -138,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				4B5A9BB9291507E1002062AC /* Requirements.txt */,
+				4BA0C760291F5FEB0011D359 /* Localization_en.plist */,
+				4BA0C762291F60020011D359 /* Localization_ru.plist */,
 			);
 			path = Requirements;
 			sourceTree = "<group>";
@@ -165,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				4BA0C754291E3B5F0011D359 /* UserPreferences.swift */,
+				4BA0C76B291F7F5D0011D359 /* LocalizationExtentions.swift */,
 			);
 			path = FirstPartyCode;
 			sourceTree = "<group>";
@@ -173,8 +194,18 @@
 			isa = PBXGroup;
 			children = (
 				4BA0C75C291EAE830011D359 /* SettingsBundleTestHelper.swift */,
+				4BA0C75E291F5BE30011D359 /* LocalizationTestHelper.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4BA0C764291F60A60011D359 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				4BA0C775291FC5340011D359 /* InfoPlist.strings */,
+				4BA0C76F291FC43D0011D359 /* Localizable.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +272,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 4B5A9B88291393CD002062AC;
 			productRefGroup = 4B5A9B92291393CD002062AC /* Products */;
@@ -258,13 +290,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BA0C761291F5FEB0011D359 /* Localization_en.plist in Resources */,
 				4B5A9B9F291393CE002062AC /* LaunchScreen.storyboard in Resources */,
 				4B5A9BC029151925002062AC /* .gitignore in Resources */,
+				4BA0C777291FC5340011D359 /* InfoPlist.strings in Resources */,
 				4B5A9BC22915192C002062AC /* LICENSE in Resources */,
 				4B5A9B9C291393CE002062AC /* Assets.xcassets in Resources */,
 				4B5A9BBA291507E1002062AC /* Requirements.txt in Resources */,
 				4B5A9BC429151932002062AC /* README.md in Resources */,
 				4B5A9B9A291393CD002062AC /* MainViewController.storyboard in Resources */,
+				4BA0C76D291FC43D0011D359 /* Localizable.strings in Resources */,
+				4BA0C763291F60020011D359 /* Localization_ru.plist in Resources */,
 				4BA0C758291E4B8C0011D359 /* Settings.bundle in Resources */,
 				4B5A9BC62915193C002062AC /* main.yml in Resources */,
 			);
@@ -288,6 +324,7 @@
 				4BA0C755291E3B5F0011D359 /* UserPreferences.swift in Sources */,
 				4B5A9B95291393CD002062AC /* AppDelegate.swift in Sources */,
 				4B5A9BCA29156EC2002062AC /* main.swift in Sources */,
+				4BA0C76C291F7F5D0011D359 /* LocalizationExtentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +334,8 @@
 			files = (
 				4B5A9BAA291393CE002062AC /* XcodeTemplateProjectTests.swift in Sources */,
 				4B5A9BC8291525D6002062AC /* TestingAppDelegate.swift in Sources */,
+				4BA0C77A29201E620011D359 /* LocalizationTests.swift in Sources */,
+				4BA0C75F291F5BE30011D359 /* LocalizationTestHelper.swift in Sources */,
 				4BA0C75D291EAE830011D359 /* SettingsBundleTestHelper.swift in Sources */,
 				4BA0C75A291EAA0C0011D359 /* SettingsBundleTests.swift in Sources */,
 			);
@@ -329,6 +368,24 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		4BA0C76F291FC43D0011D359 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BA0C76E291FC43D0011D359 /* en */,
+				4BA0C770291FC46C0011D359 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		4BA0C775291FC5340011D359 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BA0C776291FC5340011D359 /* en */,
+				4BA0C778291FC53A0011D359 /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -336,6 +393,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -398,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

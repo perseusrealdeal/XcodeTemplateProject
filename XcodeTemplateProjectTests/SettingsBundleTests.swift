@@ -29,10 +29,9 @@ class SettingsBundleTests: XCTestCase {
     }
 
     // func test_zero() { XCTFail("Tests not yet implemented in \(type(of: self)).") }
+    // func test_the_first_success() { XCTAssertTrue(true, "It's done!") }
 
     func test_build_number_meets_app_build_number() {
-
-        print(">> [\(type(of: self))]." + #function)
 
         let build_number_expected = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String
         let build_number_actual = defaults.string(forKey: Settings.BuildPreferenceKey)
@@ -44,8 +43,6 @@ class SettingsBundleTests: XCTestCase {
 
     func test_build_number_default_value() {
 
-        print(">> [\(type(of: self))]." + #function)
-
         let build_number_default_expected = "~"
         let build_number_default_actual = Settings.BuildPreferenceKey.defaultValueFromSettings
 
@@ -56,8 +53,6 @@ class SettingsBundleTests: XCTestCase {
 
     func test_version_value_meets_app_version() {
 
-        print(">> [\(type(of: self))]." + #function)
-
         let version_expected = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
         let veriosn_actual = defaults.string(forKey: Settings.VersionPreferenceKey)
 
@@ -67,8 +62,6 @@ class SettingsBundleTests: XCTestCase {
     }
 
     func test_version_default_value() {
-
-        print(">> [\(type(of: self))]." + #function)
 
         let version_default_expected = "~"
         let veriosn_default_actual = Settings.VersionPreferenceKey.defaultValueFromSettings

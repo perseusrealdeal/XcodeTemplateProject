@@ -19,8 +19,10 @@ class MainViewController: UIViewController {
         #endif
     }
 
-    class func storyboardInstance() -> MainViewController
-    {
+    @IBOutlet weak var greetingsLabel: UILabel!
+
+    class func storyboardInstance() -> MainViewController {
+
         let storyboard = UIStoryboard(name: String(describing: self), bundle: nil)
         let screen = storyboard.instantiateInitialViewController() as? MainViewController
 
@@ -32,7 +34,14 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         guard value(forKey: "storyboardIdentifier") != nil else { return }
 
+        localizeContent()
+    }
+
+    private func localizeContent() {
+        // NSLocale.currentLocaleDidChangeNotification
+        greetingsLabel.text = "greetings".localizedValue
     }
 }
