@@ -24,7 +24,16 @@ extension AppDelegate: UIApplicationDelegate {
         print(">> Launching with business matter purpose")
         print(">> [\(type(of: self))]." + #function)
         #endif
-        
+
+        // Settings bundle
+
+        UserPreferences.setBuildNumber()
+        UserPreferences.setVersionNumber()
+
+        UserPreferences.registerSettingsBundle(with: Settings.bundleParams)
+
+        // First screen
+
         window = UIWindow(frame: UIScreen.main.bounds)
 
         #if false
@@ -39,15 +48,9 @@ extension AppDelegate: UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-
         #if DEBUG
         print(">> [\(type(of: self))]." + #function)
         #endif
-
-        UserPreferences.setBuildNumber()
-        UserPreferences.setVersionNumber()
-
-        UserPreferences.registerSettingsBundle(with: Settings.bundleParams)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
