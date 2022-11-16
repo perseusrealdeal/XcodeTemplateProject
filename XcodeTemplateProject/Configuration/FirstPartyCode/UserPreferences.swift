@@ -59,11 +59,10 @@ public class UserPreferences {
         else { return }
 
         guard let settingsPlist = try? PropertyListSerialization.propertyList(
-            from: settingsData,
-            options: [],
-            format: nil) as? [String: Any],
-            let settingsPreferences = settingsPlist?[bundle_PreferencesItems] as? [[String: Any]]
-            else { return }
+            from: settingsData, options: [], format: nil) as? [String: Any],
+            let settingsPreferences =
+                settingsPlist?[bundle_PreferencesItems] as? [[String: Any]]
+        else { return }
 
         var defaultsToRegister = [String: Any]()
 

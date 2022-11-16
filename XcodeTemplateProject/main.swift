@@ -14,5 +14,6 @@ import UIKit
 // MARK: - Make the app run
 
 let appDelegateClass: AnyClass = NSClassFromString("TestingAppDelegate") ?? AppDelegate.self
+let delegateClassName = NSStringFromClass(appDelegateClass)
 
-UIApplicationMain(CommandLine.argc, CommandLine.unsafeArgv, nil, NSStringFromClass(appDelegateClass))
+UIApplicationMain(CommandLine.argc, CommandLine.unsafeArgv, nil, delegateClassName)

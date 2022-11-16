@@ -11,4 +11,6 @@
 
 import Foundation
 
-extension String { var localizedValue: String { return NSLocalizedString(self, comment: "") } }
+extension String {
+    var localizedValue: String { return NSLocalizedString(self, comment: "") }
+}

@@ -9,6 +9,10 @@
 //  All rights reserved.
 //
 //  Before start unit tests, make sure that previous app's installation is removed.
+//
+///  swiftlint:disable file_length
+///  swiftlint:disable type_body_length
+//
 
 import XCTest
 @testable import XcodeTemplateProject
@@ -33,7 +37,8 @@ class SettingsBundleTests: XCTestCase {
 
     func test_build_number_meets_app_build_number() {
 
-        let build_number_expected = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String
+        let build_number_expected =
+            Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String
         let build_number_actual = defaults.string(forKey: Settings.BuildPreferenceKey)
 
         let message_not_equal = "Build number doesn't meet requirement!"
@@ -48,12 +53,15 @@ class SettingsBundleTests: XCTestCase {
 
         let message_not_equal = "Build number default value doesn't meet requirement!"
 
-        XCTAssertEqual(build_number_default_expected, build_number_default_actual, message_not_equal)
+        XCTAssertEqual(build_number_default_expected,
+                       build_number_default_actual,
+                       message_not_equal)
     }
 
     func test_version_value_meets_app_version() {
 
-        let version_expected = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
+        let version_expected =
+            Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
         let veriosn_actual = defaults.string(forKey: Settings.VersionPreferenceKey)
 
         let message_not_equal = "Version value doesn't meet requirement!"

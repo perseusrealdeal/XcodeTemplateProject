@@ -21,7 +21,7 @@ class TestingAppDelegate: UIResponder, UIApplicationDelegate {
 
         print("<< Launching with testing matter purpose")
         print("<< \(type(of: self)) " + #function)
-        
+
         return true
     }
 }

@@ -19,7 +19,7 @@ class MainViewController: UIViewController {
         #endif
     }
 
-    @IBOutlet weak var greetingsLabel: UILabel!
+    @IBOutlet private(set) weak var greetingsLabel: UILabel!
 
     class func storyboardInstance() -> MainViewController {
 

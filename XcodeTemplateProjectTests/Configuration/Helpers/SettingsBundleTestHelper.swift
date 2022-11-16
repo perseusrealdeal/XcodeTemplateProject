@@ -23,8 +23,10 @@ extension String {
             let settingsPreferences = getPreferencesFromSettingsBundle(),
             let preference = settingsPreferences.first(
                 where: { preference in
-                    guard let value = preference[bundle_PreferenceKey] as? String, value == self
-                        else { return false }
+                    guard
+                        let value = preference[bundle_PreferenceKey] as? String, value == self
+                    else { return false }
+
                     return true
             })
         else { return nil}
@@ -41,7 +43,8 @@ extension String {
             let settingsPreferences = getPreferencesFromSettingsBundle(),
             let preference = settingsPreferences.first(
                 where: { preference in
-                    guard let value = preference[bundle_PreferenceKey] as? String, value == self
+                    guard
+                        let value = preference[bundle_PreferenceKey] as? String, value == self
                         else { return false }
                     return true
             })
@@ -59,8 +62,12 @@ private func getPreferencesFromSettingsBundle() -> [[String: Any]]? {
     let bundle_PreferencesItems        = Settings.bundleParams["PreferencesItems"]!
 
     guard
-        let settingsBundleURL = Bundle.main.url(forResource: bundle_name, withExtension: bundle_extension),
-        let settingsData = try? Data(contentsOf: settingsBundleURL.appendingPathComponent(bundle_RootPlist)),
+        let settingsBundleURL =
+        Bundle.main.url(forResource: bundle_name, withExtension: bundle_extension),
+
+        let settingsData =
+        try? Data(contentsOf: settingsBundleURL.appendingPathComponent(bundle_RootPlist)),
+
         let settingsPlist = try? PropertyListSerialization.propertyList(
             from: settingsData,
             options: [],
