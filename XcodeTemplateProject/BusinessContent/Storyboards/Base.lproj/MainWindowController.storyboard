@@ -34,7 +34,24 @@
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="I74-D3-a1h">
+                                <rect key="frame" x="222" y="127" width="37" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="fOT-Sg-WKk">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="I74-D3-a1h" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="Vvc-Vt-Kes"/>
+                            <constraint firstItem="I74-D3-a1h" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="iCC-Es-Dwj"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greetingsLabel" destination="I74-D3-a1h" id="0Ex-F2-d04"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

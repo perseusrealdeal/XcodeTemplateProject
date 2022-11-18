@@ -13,15 +13,28 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    deinit {
+        #if DEBUG
+        print("\(type(of: self)).deinit")
+        #endif
+    }
+
+    @IBOutlet private(set) weak var greetingsLabel: NSTextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        localizeContent()
     }
 
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
         }
+    }
+
+    private func localizeContent() {
+        // NSLocale.currentLocaleDidChangeNotification
+        greetingsLabel.cell?.title = "greetings".localizedValue
     }
 }
