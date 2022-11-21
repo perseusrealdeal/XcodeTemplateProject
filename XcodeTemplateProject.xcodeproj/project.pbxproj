@@ -21,6 +21,7 @@
 		4B5A9BC8291525D6002062AC /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A9BC7291525D6002062AC /* TestingAppDelegate.swift */; };
 		4B5A9BCA29156EC2002062AC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A9BC929156EC2002062AC /* main.swift */; };
 		4B6F985F2923CB3A00ADB03A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4B6F985E2923CB3A00ADB03A /* .swiftlint.yml */; };
+		4B83155C292BD48A0080DAEC /* PerseusDarkModeSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B83155B292BD48A0080DAEC /* PerseusDarkModeSingle.swift */; };
 		4BA0C755291E3B5F0011D359 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0C754291E3B5F0011D359 /* UserPreferences.swift */; };
 		4BA0C758291E4B8C0011D359 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4BA0C757291E4B8C0011D359 /* Settings.bundle */; };
 		4BA0C75A291EAA0C0011D359 /* SettingsBundleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0C759291EAA0C0011D359 /* SettingsBundleTests.swift */; };
@@ -63,6 +64,7 @@
 		4B5A9BC7291525D6002062AC /* TestingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
 		4B5A9BC929156EC2002062AC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4B6F985E2923CB3A00ADB03A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		4B83155B292BD48A0080DAEC /* PerseusDarkModeSingle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerseusDarkModeSingle.swift; sourceTree = "<group>"; };
 		4BA0C754291E3B5F0011D359 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserPreferences.swift; path = XcodeTemplateProject/Configuration/FirstPartyCode/UserPreferences.swift; sourceTree = SOURCE_ROOT; };
 		4BA0C757291E4B8C0011D359 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		4BA0C759291EAA0C0011D359 /* SettingsBundleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBundleTests.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 			children = (
 				4BA0C754291E3B5F0011D359 /* UserPreferences.swift */,
 				4BA0C76B291F7F5D0011D359 /* LocalizationExtentions.swift */,
+				4B83155B292BD48A0080DAEC /* PerseusDarkModeSingle.swift */,
 			);
 			path = FirstPartyCode;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 			files = (
 				4B5A9B97291393CD002062AC /* MainViewController.swift in Sources */,
 				4BA0C755291E3B5F0011D359 /* UserPreferences.swift in Sources */,
+				4B83155C292BD48A0080DAEC /* PerseusDarkModeSingle.swift in Sources */,
 				4B5A9B95291393CD002062AC /* AppDelegate.swift in Sources */,
 				4B5A9BCA29156EC2002062AC /* main.swift in Sources */,
 				4BA0C76C291F7F5D0011D359 /* LocalizationExtentions.swift in Sources */,

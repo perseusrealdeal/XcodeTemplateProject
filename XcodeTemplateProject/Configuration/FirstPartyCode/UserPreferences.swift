@@ -17,12 +17,6 @@ extension Settings {
     public static let BuildPreferenceKey = "build_preference"
 }
 
-extension UserDefaults {
-    func valueExists(forKey key: String) -> Bool {
-        return object(forKey: key) != nil
-    }
-}
-
 public struct Settings {
 
     static let bundleParams: [String: String] =
