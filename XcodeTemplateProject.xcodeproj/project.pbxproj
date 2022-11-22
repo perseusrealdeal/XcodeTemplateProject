@@ -13,6 +13,7 @@
 		4B1483EC2912892F0013B76E /* MainWindowController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B1483EA2912892F0013B76E /* MainWindowController.storyboard */; };
 		4B1483F82912892F0013B76E /* XcodeTemplateProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1483F72912892F0013B76E /* XcodeTemplateProjectTests.swift */; };
 		4B52C534292CCF4B00C7792A /* PerseusDarkModeSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B52C533292CCF4B00C7792A /* PerseusDarkModeSingle.swift */; };
+		4B52C536292CD05C00C7792A /* DarkModeSwitching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B52C535292CD05C00C7792A /* DarkModeSwitching.swift */; };
 		4B6F98622927D95500ADB03A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4B6F98612927D95500ADB03A /* .swiftlint.yml */; };
 		4B6F98662927DF1400ADB03A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B6F98682927DF1400ADB03A /* InfoPlist.strings */; };
 		4B6F986C2927E0F000ADB03A /* Localization_en.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B6F986B2927E0F000ADB03A /* Localization_en.plist */; };
@@ -55,6 +56,7 @@
 		4B1483F72912892F0013B76E /* XcodeTemplateProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeTemplateProjectTests.swift; sourceTree = "<group>"; };
 		4B1483F92912892F0013B76E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B52C533292CCF4B00C7792A /* PerseusDarkModeSingle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerseusDarkModeSingle.swift; sourceTree = "<group>"; };
+		4B52C535292CD05C00C7792A /* DarkModeSwitching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeSwitching.swift; sourceTree = "<group>"; };
 		4B6F98612927D95500ADB03A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		4B6F98672927DF1400ADB03A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4B6F98692927DF4800ADB03A /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 			children = (
 				4B6F98762927E81000ADB03A /* LocalizationExtentions.swift */,
 				4B52C533292CCF4B00C7792A /* PerseusDarkModeSingle.swift */,
+				4B52C535292CD05C00C7792A /* DarkModeSwitching.swift */,
 			);
 			path = FirstPartyCode;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BBE906029129055008F734D /* MainWindow.swift in Sources */,
+				4B52C536292CD05C00C7792A /* DarkModeSwitching.swift in Sources */,
 				4BBE90672912931A008F734D /* main.swift in Sources */,
 				4B1483E72912892C0013B76E /* ViewController.swift in Sources */,
 				4B52C534292CCF4B00C7792A /* PerseusDarkModeSingle.swift in Sources */,
