@@ -4,13 +4,13 @@
 //
 //  Created by Mikhail Zhigulin in 7530.
 //
-//  Copyright (c) 7530 - 7531 Mikhail Zhigulin of Novosibirsk.
+//  Copyright © 7530 - 7531 Mikhail Zhigulin of Novosibirsk.
 //  All rights reserved.
 //
 //
 //  MIT License
 //
-//  Copyright (c) 7530 - 7531 Mikhail Zhigulin of Novosibirsk
+//  Copyright © 7530 - 7531 Mikhail Zhigulin of Novosibirsk
 //
 //  The year starts from the creation of the world according to a Slavic calendar.
 //  September, the 1st of Slavic year.
@@ -34,6 +34,7 @@
 //  SOFTWARE.
 //
 // swiftlint:disable file_length block_based_kvo
+//
 
 #if canImport(UIKit)
 import UIKit

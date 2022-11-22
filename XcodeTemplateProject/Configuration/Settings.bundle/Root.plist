@@ -19,6 +19,28 @@
 	<array>
         <dict>
             <key>Type</key>
+            <string>PSMultiValueSpecifier</string>
+            <key>Title</key>
+            <string>Dark Mode</string>
+            <key>Key</key>
+            <string>dark_mode_preference</string>
+            <key>DefaultValue</key>
+            <string>0</string>
+            <key>Titles</key>
+            <array>
+                <string>Dark Mode OFF</string>
+                <string>Dark Mode ON</string>
+                <string>Dark Mode AUTO</string>
+            </array>
+            <key>Values</key>
+            <array>
+                <string>2</string>
+                <string>1</string>
+                <string>0</string>
+            </array>
+        </dict>
+        <dict>
+            <key>Type</key>
             <string>PSGroupSpecifier</string>
             <key>Title</key>
             <string>release</string>

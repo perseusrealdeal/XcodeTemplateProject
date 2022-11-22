@@ -17,6 +17,14 @@
         <string>Проект Xcode</string>
         <key>CFBundleName</key>
         <string>Проект Xcode</string>
+        <key>Dark Mode</key>
+        <string>Тёмный режим</string>
+        <key>Dark Mode AUTO</key>
+        <string>системный</string>
+        <key>Dark Mode ON</key>
+        <string>включен</string>
+        <key>Dark Mode OFF</key>
+        <string>отключен</string>
         <key>release</key>
         <string>Сведения о выпуске</string>
         <key>version</key>

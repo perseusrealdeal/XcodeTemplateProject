@@ -11,9 +11,6 @@
 //
 //  Before start unit tests, make sure that previous app's installation is removed.
 //
-///  swiftlint:disable file_length
-///  swiftlint:disable type_body_length
-//
 
 import XCTest
 @testable import XcodeTemplateProject
@@ -36,15 +33,59 @@ class LocalizationTests: XCTestCase {
     // func test_zero() { XCTFail("Tests not yet implemented in \(type(of: self)).") }
     // func test_the_first_success() { XCTAssertTrue(true, "It's done!") }
 
-    // MARK: - Version and Build Titles
+    // MARK: - Dark Mode Titles in Settings bundle
+
+    func test_Dark_Mode_group_title_should_be_localized() {
+
+        let expected = "Dark Mode".localizedFromSettings
+        let requirement = "Dark Mode".localizedFromRequirements
+
+        let tell_not_equal =
+        "\"Dark Mode\" group title is not correct with the expected value."
+
+        XCTAssertEqual(requirement, expected, tell_not_equal)
+    }
+
+    func test_Dark_Mode_AUTO_title_should_be_localized() {
+
+        let expected = "Dark Mode AUTO".localizedFromSettings
+        let requirement = "Dark Mode AUTO".localizedFromRequirements
+
+        let tell_not_equal = "\"Dark Mode AUTO\" title is not correct with the expected value."
+
+        XCTAssertEqual(requirement, expected, tell_not_equal)
+    }
+
+    func test_Dark_Mode_ON_title_should_be_localized() {
+
+        let expected = "Dark Mode ON".localizedFromSettings
+        let requirement = "Dark Mode ON".localizedFromRequirements
+
+        let tell_not_equal = "\"Dark Mode ON\" title is not correct with the expected value."
+
+        XCTAssertEqual(requirement, expected, tell_not_equal)
+    }
+
+    func test_Dark_Mode_OFF_title_should_be_localized() {
+
+        let expected = "Dark Mode OFF".localizedFromSettings
+        let requirement = "Dark Mode OFF".localizedFromRequirements
+
+        let tell_not_equal = "\"Dark Mode OFF\" title is not correct with the expected value."
+
+        XCTAssertEqual(requirement, expected, tell_not_equal)
+    }
+
+    // MARK: - Version and Build Titles in Settings bundle
 
     func test_release_app_number_group_title_should_be_localized() {
 
         let expected = "release".localizedFromSettings
         let requirement = "release".localizedFromRequirements
 
-        XCTAssertEqual(requirement, expected,
-                       "\"release\" group title is not correct with the expected value.")
+        let tell_not_equal = "\"release\" group title is not correct with the expected value."
+
+        XCTAssertEqual(requirement, expected, tell_not_equal)
     }
 
     func test_version_title_should_be_localized() {
@@ -52,8 +93,9 @@ class LocalizationTests: XCTestCase {
         let expected = "version".localizedFromSettings
         let requirement = "version".localizedFromRequirements
 
-        XCTAssertEqual(requirement, expected,
-                       "\"version\" title is not correct with the expected value.")
+        let tell_not_equal = "\"version\" title is not correct with the expected value."
+
+        XCTAssertEqual(requirement, expected, tell_not_equal)
     }
 
     func test_build_title_should_be_localized() {
@@ -61,20 +103,21 @@ class LocalizationTests: XCTestCase {
         let expected = "build".localizedFromSettings
         let requirement = "build".localizedFromRequirements
 
-        XCTAssertEqual(requirement, expected,
-                       "\"build\" title hasn't is not correct with the expected value.")
+        let tell_not_equal = "\"build\" title hasn't is not correct with the expected value."
+
+        XCTAssertEqual(requirement, expected, tell_not_equal)
     }
 
     // MARK: - UI tests
 
     func test_greetings_should_meet_requirement() {
 
-        let greetings_expected = "greetings".localizedFromRequirements
-        let greetings_actual = "greetings".localizedValue
+        let expected = "greetings".localizedFromRequirements
+        let actual = "greetings".localizedValue
 
-        let message_not_equal = "Greetings doesn't meet requirement!"
+        let tell_not_equal = "Greetings doesn't meet requirement!"
 
-        XCTAssertEqual(greetings_expected, greetings_actual, message_not_equal)
+        XCTAssertEqual(expected, actual, tell_not_equal)
     }
 
     func test_MainViewController_greetings() {
@@ -83,11 +126,11 @@ class LocalizationTests: XCTestCase {
 
         sut.loadViewIfNeeded()
 
-        let greetings_expected = "greetings".localizedValue
-        let greetings_actual = sut.greetingsLabel.text
+        let expected = "greetings".localizedValue
+        let actual = sut.greetingsLabel.text
 
-        let message_not_equal = "Something went wrong with localized greetings!"
+        let tell_not_equal = "Something went wrong with localized greetings!"
 
-        XCTAssertEqual(greetings_expected, greetings_actual, message_not_equal)
+        XCTAssertEqual(expected, actual, tell_not_equal)
     }
 }

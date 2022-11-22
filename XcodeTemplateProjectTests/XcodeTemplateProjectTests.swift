@@ -9,9 +9,6 @@
 //  Licensed under the special license. See LICENSE file.
 //  All rights reserved.
 //
-///  swiftlint:disable file_length
-///  swiftlint:disable type_body_length
-//
 
 import XCTest
 @testable import XcodeTemplateProject
@@ -19,6 +16,6 @@ import XCTest
 class XcodeTemplateProjectTests: XCTestCase {
 
     // func test_zero() { XCTFail("Tests not yet implemented in \(type(of: self)).") }
-    // func test_the_first_success() { XCTAssertTrue(true, "It's done!") }
+    func test_the_first_success() { XCTAssertTrue(true, "It's done!") }
 
 }

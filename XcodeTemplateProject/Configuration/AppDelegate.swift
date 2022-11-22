@@ -45,6 +45,8 @@ extension AppDelegate: UIApplicationDelegate {
 
         window!.makeKeyAndVisible()
 
+        AppearanceService.makeUp()
+
         return true
     }
 
@@ -52,6 +54,14 @@ extension AppDelegate: UIApplicationDelegate {
         #if DEBUG
         print(">> [\(type(of: self))]." + #function)
         #endif
+
+        // Update Dark Mode from Settings
+        if let choice = isDarkModeSettingsChanged() {
+            // Change Dark Mode value in Perseus Dark Mode library
+            AppearanceService.DarkModeUserChoice = choice
+            // Update appearance in accoring with changed Dark Mode Style
+            AppearanceService.makeUp()
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

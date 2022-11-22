@@ -11,9 +11,6 @@
 //
 //  Before start unit tests, make sure that previous app's installation is removed.
 //
-///  swiftlint:disable file_length
-///  swiftlint:disable type_body_length
-//
 
 import XCTest
 @testable import XcodeTemplateProject
@@ -36,47 +33,68 @@ class SettingsBundleTests: XCTestCase {
     // func test_zero() { XCTFail("Tests not yet implemented in \(type(of: self)).") }
     // func test_the_first_success() { XCTAssertTrue(true, "It's done!") }
 
+    // MARK: - Dark Mode Option in Settings bundle
+
+    func test_Dark_Mode_default_value() {
+
+        let expected = "0"
+        let actual = DARK_MODE_SETTINGS_KEY.defaultValueFromSettings
+
+        let tell_not_equal = "Dark Mode default value doesn't meet requirement!"
+
+        XCTAssertEqual(expected, actual, tell_not_equal)
+    }
+
+    func test_Dark_Mode_Values() {
+
+        let expected = ["2", "1", "0"]
+        let actual = DARK_MODE_SETTINGS_KEY.valuesFromSettings
+
+        let tell_not_equal = "Dark Mode values doesn't meet requirement!"
+
+        XCTAssertEqual(expected, actual, tell_not_equal)
+    }
+
+    // MARK: - Release Number in Settings bundle
+
     func test_build_number_meets_app_build_number() {
 
-        let build_number_expected =
-            Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String
-        let build_number_actual = defaults.string(forKey: Settings.BuildPreferenceKey)
+        let expected = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String
+        let actual = defaults.string(forKey: Settings.BuildPreferenceKey)
 
-        let message_not_equal = "Build number doesn't meet requirement!"
+        let tell_not_equal = "Build number doesn't meet requirement!"
 
-        XCTAssertEqual(build_number_expected, build_number_actual, message_not_equal)
+        XCTAssertEqual(expected, actual, tell_not_equal)
     }
 
     func test_build_number_default_value() {
 
-        let build_number_default_expected = "~"
-        let build_number_default_actual = Settings.BuildPreferenceKey.defaultValueFromSettings
+        let expected = "~"
+        let actual = Settings.BuildPreferenceKey.defaultValueFromSettings
 
-        let message_not_equal = "Build number default value doesn't meet requirement!"
+        let tell_not_equal = "Build number default value doesn't meet requirement!"
 
-        XCTAssertEqual(build_number_default_expected,
-                       build_number_default_actual,
-                       message_not_equal)
+        XCTAssertEqual(expected, actual, tell_not_equal)
     }
 
     func test_version_value_meets_app_version() {
 
-        let version_expected =
+        let expected =
             Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
-        let veriosn_actual = defaults.string(forKey: Settings.VersionPreferenceKey)
+        let actual = defaults.string(forKey: Settings.VersionPreferenceKey)
 
-        let message_not_equal = "Version value doesn't meet requirement!"
+        let tell_not_equal = "Version value doesn't meet requirement!"
 
-        XCTAssertEqual(version_expected, veriosn_actual, message_not_equal)
+        XCTAssertEqual(expected, actual, tell_not_equal)
     }
 
     func test_version_default_value() {
 
-        let version_default_expected = "~"
-        let veriosn_default_actual = Settings.VersionPreferenceKey.defaultValueFromSettings
+        let expected = "~"
+        let actual = Settings.VersionPreferenceKey.defaultValueFromSettings
 
-        let message_not_equal = "Version default value doesn't meet requirement!"
+        let tell_not_equal = "Version default value doesn't meet requirement!"
 
-        XCTAssertEqual(version_default_expected, veriosn_default_actual, message_not_equal)
+        XCTAssertEqual(expected, actual, tell_not_equal)
     }
 }
