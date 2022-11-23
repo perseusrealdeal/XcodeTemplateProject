@@ -69,7 +69,8 @@ public typealias Responder = NSResponder
 public extension Notification.Name {
     static let MakeAppearanceUpNotification = Notification.Name("MakeAppearanceUpNotification")
     #if os(macOS)
-    static let UIThemeChangedNotification = Notification.Name("UIThemeChangedNotification")
+    static let AppleInterfaceThemeChangedNotification =
+        Notification.Name("AppleInterfaceThemeChangedNotification")
     #endif
 }
 
@@ -95,7 +96,7 @@ public class AppearanceService {
         DistributedNotificationCenter.default.addObserver(
             self,
             selector: #selector(interfaceModeChanged),
-            name: .UIThemeChangedNotification,
+            name: .AppleInterfaceThemeChangedNotification,
             object: nil
         )
         #endif
