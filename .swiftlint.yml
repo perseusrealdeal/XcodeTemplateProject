@@ -18,8 +18,8 @@ identifier_name: # Variable name
   allowed_symbols: "_"
   min_length: 2
   max_length:
-    warning: 30
-    error: 35
+    warning: 40
+    error: 45
 
 file_length:
   warning: 200
