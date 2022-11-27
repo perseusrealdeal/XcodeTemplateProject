@@ -52,7 +52,7 @@ extension String {
     }
 }
 
-fileprivate final class LocalizationTestHelper {
+private final class LocalizationTestHelper {
 
     static var currentLanguage: (langCode: String, localeCode: String)? {
 

@@ -19,6 +19,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         print(">> Launching with business matter purpose")
         print(">> [\(type(of: self))]." + #function)
         #endif
+
+        AppearanceService.makeUp()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

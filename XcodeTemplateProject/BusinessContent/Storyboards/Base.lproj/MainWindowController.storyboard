@@ -36,21 +36,60 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="I74-D3-a1h">
-                                <rect key="frame" x="222" y="127" width="37" height="17"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="fOT-Sg-WKk">
+                                <rect key="frame" x="190" y="157" width="100" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Greetings Label" id="fOT-Sg-WKk">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button identifier="light" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5n8-Im-EuK">
+                                <rect key="frame" x="191" y="130" width="135" height="18"/>
+                                <buttonCell key="cell" type="radio" title="Light Radio Button" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="yf8-zo-rly">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="redioDarkModeGroupChanged:" target="XfG-lQ-9wD" id="NzE-fm-VZC"/>
+                                </connections>
+                            </button>
+                            <button identifier="auto" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XI8-cv-vZS">
+                                <rect key="frame" x="191" y="78" width="132" height="18"/>
+                                <buttonCell key="cell" type="radio" title="Auto Radio Button" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="0Vk-CJ-rDa">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="redioDarkModeGroupChanged:" target="XfG-lQ-9wD" id="wXP-jn-p1P"/>
+                                </connections>
+                            </button>
+                            <button identifier="dark" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yx5-DN-hN0">
+                                <rect key="frame" x="191" y="104" width="132" height="18"/>
+                                <buttonCell key="cell" type="radio" title="Dark Radio Button" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="lOA-7T-tDI">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="redioDarkModeGroupChanged:" target="XfG-lQ-9wD" id="nHB-lk-yW9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="I74-D3-a1h" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="Vvc-Vt-Kes"/>
+                            <constraint firstItem="yx5-DN-hN0" firstAttribute="leading" secondItem="I74-D3-a1h" secondAttribute="leading" id="2RM-Ln-ayX"/>
+                            <constraint firstItem="XI8-cv-vZS" firstAttribute="leading" secondItem="I74-D3-a1h" secondAttribute="leading" id="EIV-Td-fpG"/>
+                            <constraint firstItem="XI8-cv-vZS" firstAttribute="top" secondItem="yx5-DN-hN0" secondAttribute="bottom" constant="10" id="IAv-uw-IFs"/>
+                            <constraint firstItem="I74-D3-a1h" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" constant="-30" id="Vvc-Vt-Kes"/>
+                            <constraint firstItem="5n8-Im-EuK" firstAttribute="top" secondItem="I74-D3-a1h" secondAttribute="bottom" constant="10" id="ZrA-o9-SkZ"/>
+                            <constraint firstItem="5n8-Im-EuK" firstAttribute="leading" secondItem="I74-D3-a1h" secondAttribute="leading" id="axh-Ed-yaR"/>
                             <constraint firstItem="I74-D3-a1h" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="iCC-Es-Dwj"/>
+                            <constraint firstItem="yx5-DN-hN0" firstAttribute="top" secondItem="5n8-Im-EuK" secondAttribute="bottom" constant="10" id="mvM-oa-3te"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="autoRadioButton" destination="XI8-cv-vZS" id="heV-Iu-9ET"/>
+                        <outlet property="darkRadioButton" destination="yx5-DN-hN0" id="Doh-n3-SSm"/>
                         <outlet property="greetingsLabel" destination="I74-D3-a1h" id="0Ex-F2-d04"/>
+                        <outlet property="lightRadioButton" destination="5n8-Im-EuK" id="L8F-Fn-2eE"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
