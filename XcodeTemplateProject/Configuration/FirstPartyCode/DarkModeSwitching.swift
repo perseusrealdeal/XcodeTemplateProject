@@ -34,7 +34,14 @@
 //  SOFTWARE.
 //
 
+#if canImport(UIKit)
+import UIKit
+#elseif canImport(Cocoa)
 import Cocoa
+#endif
+
+// Uncomment the instruction if added Perseus Dark Mode via package manager.
+// import PerseusDarkMode
 
 // Dark Mode option key used in Settings bundle.
 let DARK_MODE_SETTINGS_KEY = "dark_mode_preference"
