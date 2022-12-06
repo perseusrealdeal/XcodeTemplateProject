@@ -12,6 +12,7 @@
 		4B1483E92912892F0013B76E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B1483E82912892F0013B76E /* Assets.xcassets */; };
 		4B1483EC2912892F0013B76E /* MainWindowController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B1483EA2912892F0013B76E /* MainWindowController.storyboard */; };
 		4B1483F82912892F0013B76E /* XcodeTemplateProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1483F72912892F0013B76E /* XcodeTemplateProjectTests.swift */; };
+		4B4B3194293F4B660001262E /* PerseusUISystemKitSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4B3193293F4B660001262E /* PerseusUISystemKitSingle.swift */; };
 		4B52C534292CCF4B00C7792A /* PerseusDarkModeSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B52C533292CCF4B00C7792A /* PerseusDarkModeSingle.swift */; };
 		4B52C536292CD05C00C7792A /* DarkModeSwitching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B52C535292CD05C00C7792A /* DarkModeSwitching.swift */; };
 		4B6F98622927D95500ADB03A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4B6F98612927D95500ADB03A /* .swiftlint.yml */; };
@@ -55,6 +56,7 @@
 		4B1483F32912892F0013B76E /* XcodeTemplateProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeTemplateProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B1483F72912892F0013B76E /* XcodeTemplateProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeTemplateProjectTests.swift; sourceTree = "<group>"; };
 		4B1483F92912892F0013B76E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B4B3193293F4B660001262E /* PerseusUISystemKitSingle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerseusUISystemKitSingle.swift; sourceTree = "<group>"; };
 		4B52C533292CCF4B00C7792A /* PerseusDarkModeSingle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerseusDarkModeSingle.swift; sourceTree = "<group>"; };
 		4B52C535292CD05C00C7792A /* DarkModeSwitching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeSwitching.swift; sourceTree = "<group>"; };
 		4B6F98612927D95500ADB03A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 			children = (
 				4B6F98762927E81000ADB03A /* LocalizationExtentions.swift */,
 				4B52C533292CCF4B00C7792A /* PerseusDarkModeSingle.swift */,
+				4B4B3193293F4B660001262E /* PerseusUISystemKitSingle.swift */,
 				4B52C535292CD05C00C7792A /* DarkModeSwitching.swift */,
 			);
 			path = FirstPartyCode;
@@ -358,6 +361,7 @@
 				4B52C536292CD05C00C7792A /* DarkModeSwitching.swift in Sources */,
 				4BBE90672912931A008F734D /* main.swift in Sources */,
 				4B1483E72912892C0013B76E /* ViewController.swift in Sources */,
+				4B4B3194293F4B660001262E /* PerseusUISystemKitSingle.swift in Sources */,
 				4B52C534292CCF4B00C7792A /* PerseusDarkModeSingle.swift in Sources */,
 				4B1483E52912892C0013B76E /* AppDelegate.swift in Sources */,
 				4BBE905E29128FB1008F734D /* MainWindowController.swift in Sources */,
