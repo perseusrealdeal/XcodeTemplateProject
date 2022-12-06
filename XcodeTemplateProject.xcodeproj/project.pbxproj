@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B4B3192293E293D0001262E /* PerseusUISystemKitSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4B3191293E293D0001262E /* PerseusUISystemKitSingle.swift */; };
 		4B5A9B95291393CD002062AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A9B94291393CD002062AC /* AppDelegate.swift */; };
 		4B5A9B97291393CD002062AC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A9B96291393CD002062AC /* MainViewController.swift */; };
 		4B5A9B9A291393CD002062AC /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5A9B98291393CD002062AC /* MainViewController.storyboard */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B4B3191293E293D0001262E /* PerseusUISystemKitSingle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerseusUISystemKitSingle.swift; sourceTree = "<group>"; };
 		4B5A9B91291393CD002062AC /* XcodeTemplateProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeTemplateProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5A9B94291393CD002062AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B5A9B96291393CD002062AC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				4BA0C754291E3B5F0011D359 /* UserPreferences.swift */,
 				4BA0C76B291F7F5D0011D359 /* LocalizationExtentions.swift */,
 				4B83155B292BD48A0080DAEC /* PerseusDarkModeSingle.swift */,
+				4B4B3191293E293D0001262E /* PerseusUISystemKitSingle.swift */,
 				4B83155F292C181A0080DAEC /* DarkModeSwitching.swift */,
 			);
 			path = FirstPartyCode;
@@ -356,6 +359,7 @@
 				4B831560292C181A0080DAEC /* DarkModeSwitching.swift in Sources */,
 				4B83155C292BD48A0080DAEC /* PerseusDarkModeSingle.swift in Sources */,
 				4B5A9B95291393CD002062AC /* AppDelegate.swift in Sources */,
+				4B4B3192293E293D0001262E /* PerseusUISystemKitSingle.swift in Sources */,
 				4B5A9BCA29156EC2002062AC /* main.swift in Sources */,
 				4BA0C76C291F7F5D0011D359 /* LocalizationExtentions.swift in Sources */,
 			);
